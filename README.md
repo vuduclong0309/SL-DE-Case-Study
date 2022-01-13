@@ -1,1 +1,0 @@
-# SL-DE-Case-Study
