@@ -1,7 +1,7 @@
 # SecretLab Data Engineering Case Study
 This section is a test of your conceptual data engineering understanding - you may code this out for illustration, or you may choose to simply discuss the issues with diagrams and sample code.
 ## Data Modelling
-Create_DB_tables_pg.sql depecits how the data should be formatted after landing; how would you architecture base layer for OLAP purposes.
+Create_DB_tables_pg.sql depecits how the data should be formatted after it has landed; how would you architecture base layer for OLAP purposes.
 Assume the business will need to perform frequent analysis of:
 - Revenue
 - Item Sales
