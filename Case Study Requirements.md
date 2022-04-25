@@ -19,10 +19,13 @@ How would you push these data sets assume each new file is incremental from S3 i
 1. Provide a DAG or ochestration diagram 
 2. This is not a docker skill test - you may use (AWS MWAA or DBT)
 
-Each time a sale happens, the warehouse will pack the product and send it to a 3rd party logistics handler to deliver. Assuming we wanted to enrich our sales data with tracking data accurate up to 1 minute or 1 hour, how would you go about consuming it - you can assume the following API is used https://developers.aftership.com/reference/webhook. You can assume the webhook's data landing is S3, or any other comparable cloud bucket.
+### Enriching company data with external webhooks & APIs.
 
-3. Consider each line sales item is being shipped out and then tracked by a third party logistics tracker, that has provided a webhook. How would you design the ingestion architecture - support your explnation with a systems diagram. You may useas the reference webhook
-4. Aftership also offers an API, discuss how your systems design would be different and discuss the pros and cons of ingesting via REST API vs. Webhook
+Each time a sale happens, the warehouse will pack the product and send it to a 3rd party logistics handler to deliver. Assuming we wanted to enrich our sales data with tracking data accurate up to 1 minute or 1 hour. How would you go about consuming this webhook (https://developers.aftership.com/reference/webhook). You will be landing the webhook data in S3, or any other comparable cloud bucket.
+
+1. Consider each line sales item is being shipped out and then tracked by a third party logistics tracker, that has provided a webhook. How would you design the ingestion architecture - support your explnation with a systems diagram. You may useas the reference webhook
+2. Aftership also offers an API, discuss how your systems design would be different and discuss the pros and cons of ingesting via REST API vs. Webhook
+3. Discuss the differences in implmentation
 
 ### Error Handling
 1. Something is wrong with the data set when you attempt to load it - can you spot the problem is? 
