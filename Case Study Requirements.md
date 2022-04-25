@@ -10,15 +10,24 @@ Assume the business will need to perform frequent analysis of:
 - By Customer
 - By Date
 Discuss your architecture considerations as well as pk/fks (soft or hard), indexes and partitions where appropraite - you may assume the real orders table is about 20-30 M records
-What other helper tables would you build into the data warehouse?
+
 ## Data Pipelining
 ### Pipelining
+
 How would you push these data sets assume each new file is incremental from S3 into
+
 1. Provide a DAG or ochestration diagram 
-2. This is not a docker skill test - you may use (AWS MWAA)
+2. This is not a docker skill test - you may use (AWS MWAA or DBT)
+
+Each time a sale happens, the warehouse will pack the product and send it to a 3rd party logistics handler to deliver. Assuming we wanted to enrich our sales data with tracking data accurate up to 1 minute or 1 hour, how would you go about consuming it - you can assume the following API is used https://developers.aftership.com/reference/webhook. You can assume the webhook's data landing is S3, or any other comparable cloud bucket.
+
+3. Consider each line sales item is being shipped out and then tracked by a third party logistics tracker, that has provided a webhook. How would you design the ingestion architecture - support your explnation with a systems diagram. You may useas the reference webhook
+4. Aftership also offers an API, discuss how your systems design would be different and discuss the pros and cons of ingesting via REST API vs. Webhook
+
 ### Error Handling
 1. Something is wrong with the data set when you attempt to load it - can you spot the problem is? 
-2.  How would you go about handling the problem? Illustrate with some sample code.
+2. How would you go about handling the problem? Illustrate with some sample code.
+
 ## Analytical SQL
 ### Select Query
 Sometimes products for whatever reason stop selling and a symptom can be an item that was selling well faces a stock out or de-listing (or something else). Write a query that shows products that have sold for more than 30 days in the last 60 days, but hasn't had sales for the last week.
