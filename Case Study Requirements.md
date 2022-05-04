@@ -17,7 +17,6 @@ Discuss your architecture considerations as well as pk/fks (soft or hard), index
 How would you push these data sets assume each new file is incremental from S3 into
 
 1. Provide a DAG or ochestration diagram 
-2. This is not a docker skill test - you may use (AWS MWAA or DBT)
 
 ### Enriching company data with external webhooks & APIs.
 
@@ -26,6 +25,7 @@ Each time a sale happens, the warehouse will pack the product and send it to a 3
 1. Consider each line sales item is being shipped out and then tracked by a third party logistics tracker, that has provided a webhook. How would you design the ingestion architecture - support your explnation with a systems diagram. You may useas the reference webhook
 2. Aftership also offers an API, discuss how your systems design would be different and discuss the pros and cons of ingesting via REST API vs. Webhook
 3. Discuss the differences in implmentation
+4. Provide a systems diagram only.
 
 ### Error Handling
 1. Something is wrong with the data set when you attempt to load it - can you spot the problem is? 
