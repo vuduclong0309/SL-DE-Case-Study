@@ -27,10 +27,6 @@ Each time a sale happens, the warehouse will pack the product and send it to a 3
 3. Discuss the differences in implmentation
 4. Provide a systems diagram only.
 
-### Error Handling
-1. Something is wrong with the data set when you attempt to load it - can you spot the problem is? 
-2. How would you go about handling the problem? Illustrate with some sample code.
-
 ## Analytical SQL
 ### Select Query
 Sometimes products for whatever reason stop selling and a symptom can be an item that was selling well faces a stock out or de-listing (or something else). Write a query that shows products that have sold for more than 30 days in the last 60 days, but hasn't had sales for the last week.
