@@ -1,4 +1,4 @@
-#Physical Design
+# Physical Design
 
 ## Final touch on table declaration
 - All dim, dwd & dws table has been declared
@@ -8,3 +8,5 @@
 - Other tables like user & products we will assume to not have modification, thus dim table should be sufficient.
 
 This led into our final physical design, shown in 3-physic_design.png
+
+We also provided sample ddl table for mart tables creation & sample dml for running hourly. Please refer to src/ddl & src/dml respectively
