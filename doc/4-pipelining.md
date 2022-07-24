@@ -14,11 +14,11 @@ How would you push these data sets assume each new file is incremental from S3 i
 - Webhook is event based, each event server will sent info.
 - If we use this is update table, updating process is prone to overloading if there are too many event in short timespan
 
-Approach: use info dump file as an output for webhook. From this info dump file we will schedule a reading job and then insert into our database. (refer to the image ingestion_pipeline_withrestapi)
+Approach: use info dump file as an output for webhook. From this info dump file we will schedule a reading job and then insert into our database. (refer to the image 4-ingestion_pipeline_with_restapi.png)
 
 ### API
 - For System with RestfulAPI is request based. We can control how much request to call. However, data is less real time.
-- The system design with restAPI would be more standard (refer to the image ingestion_pipeline_withrestapi)
+- The system design with restAPI would be more standard (refer to the image 4-ingestion_pipeline_with_restapi)
 
 ### Webhook vs Api
 | RestAPI | Webhook  |

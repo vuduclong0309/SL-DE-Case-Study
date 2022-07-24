@@ -38,6 +38,6 @@ As there are multiple of granularity, multilayered architecture are one desirabl
 
 Optionally, if query for aggregation of specific time window is frequent, we can build nd table (e.g 60d & 7d table for our case study) from 1d table, since they are additive fact
 
-The full data warehouse layers is demonstrated in the image below
+The full data warehouse layers is demonstrated in the image 2-logic_design.png
 
 For physical design, please refer to physical design image.
